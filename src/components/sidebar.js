@@ -4,16 +4,16 @@ const CommunityAdmin= (props)=>{
   return(
     <>
     
-    <nav className="sticky top-0 z-50 flex w-full flex-wrap text-center bg-[#FBFBFB] py-2 text-purple-500 shadow-lg focus:text-neutral-700 dark:bg-slate-50 lg:py-4">
-    <div className="flex w-full flex-wrap  px-3">
+    <nav className="sticky top-0 z-50 flex w-full flex-wrap content-center text-center bg-[#FBFBFB] py-2 text-purple-500 shadow-lg focus:text-neutral-700 dark:bg-slate-50 lg:py-4">
+    <div className="flex w-full flex-wrap content-center justify-center px-3">
   
-    <img src='./images/ndm.png' className="w-14 rounded-sm "alt="Avatar" /> 
-    <div class="pl-96 ...">
+    <img src='./images/ndm.png' className="w-14 rounded-sm absolute left-0 top-0"alt="Avatar" /> 
+ 
     <h1 className=" text-4xl font-bold font-serif text-center">{props.name}</h1>
-    </div>
-    <div class="pl-96 ...">
-    <img src="https://tecdn.b-cdn.net/img/new/avatars/2.webp" className="w-12 rounded-full "alt="Avatar" /> 
-    </div>
+ 
+   
+    <img src="https://tecdn.b-cdn.net/img/new/avatars/2.webp" className="w-12 rounded-full absolute top-3 right-3"alt="Avatar" /> 
+  
 </div>
 </nav>
 
@@ -55,7 +55,7 @@ const CommunityAdmin= (props)=>{
     </a>
   </li>
   <li>
-    <a href="/" className="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
+    <a href="/ " className="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
       <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i className="bx bx-bell"></i></span>
       <span className="text-sm font-medium">Notifications</span>
       <span className="ml-auto mr-6 text-sm bg-red-100 rounded-full px-3 py-px text-red-500">5</span>
