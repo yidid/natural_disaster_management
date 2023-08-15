@@ -8,6 +8,8 @@ import Donation from './pages/donation';
 import FastResponders from './pages/responders';
 import DisastersUser from './pages/user.disaster';
 import ChatUser from './pages/user.chat';
+import UserDonation from './pages/user.donation';
+import AddDisaster from './components/addDisaster';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
     <Route path='/responders' element={<FastResponders />}></Route>
     <Route path='/user' element={<DisastersUser />}></Route>
     <Route path='/userchat' element={<ChatUser />}></Route>
+    <Route path='/userDonation' element={<UserDonation />}></Route>
+    <Route path='/disasters' element={<AddDisaster />}></Route>
    </Routes>
    </Router>  
      
