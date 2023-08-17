@@ -3,6 +3,8 @@ import React from "react";
 import { useState } from "react";
 import NavBar from "../components/navbar";
 import DisasterService from "../services/DisasterService";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const AddDisaster = () => {
@@ -22,6 +24,9 @@ const AddDisaster = () => {
       };
     
       const saveDisaster = () => {
+     
+      
+      
         var data = {
           name:disaster.name,
           title: disaster.title,
@@ -36,14 +41,25 @@ const AddDisaster = () => {
               title: response.data.title,
               description: response.data.description,
               published: response.data.published
+             
             });
+            showToastMessage();
            
             console.log(response.data);
           })
           .catch(e => {
             console.log(e);
           });
+         
+        
       };
+
+
+      const showToastMessage = () => {
+        toast.warning(' You have canceled!', {
+            position: toast.POSITION.TOP_RIGHT
+        });
+    };
     
       
     return(
@@ -78,7 +94,7 @@ const AddDisaster = () => {
             value={disaster.title}
             onChange={handleInputChange}
              autocomplete="email" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-100 sm:text-sm sm:leading-6"></input>
-          </div>
+          </div>  
         </div>
 
         <div className="col-span-full">
@@ -93,9 +109,6 @@ const AddDisaster = () => {
           </div>
           
         </div>
-        
-
-      
       </div>
       <div className="col-span-full">
           <label for="cover-photo" className="block text-sm font-medium leading-6 text-gray-900">Add Photo</label>
@@ -116,14 +129,13 @@ const AddDisaster = () => {
           </div>
         </div>
      
-
-   
-
   <div className="mt-6 flex items-center justify-end gap-x-6">
     <button type="button"
+    onClick={showToastMessage }
     
-     className="text-sm font-semibold leading-6 text-gray-900">Cancel</button>
+     className="text-sm  font-semibold leading-6 text-gray-900">Cancel</button>
     <button type="submit" onClick={saveDisaster}  className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Save</button>
+    <ToastContainer />
   </div>
   </div>
   </div>

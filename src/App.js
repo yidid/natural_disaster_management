@@ -10,6 +10,9 @@ import DisastersUser from './pages/user.disaster';
 import ChatUser from './pages/user.chat';
 import UserDonation from './pages/user.donation';
 import AddDisaster from './components/addDisaster';
+import AskDonation from './pages/user.ask.donation';
+import CashDonation from './pages/user.cash';
+import MaterialDonation from './components/Material';
 
 function App() {
   return (
@@ -24,6 +27,11 @@ function App() {
     <Route path='/userchat' element={<ChatUser />}></Route>
     <Route path='/userDonation' element={<UserDonation />}></Route>
     <Route path='/disasters' element={<AddDisaster />}></Route>
+    <Route path='/ask' element={<AskDonation />}></Route>
+    <Route path='/cash' element={<CashDonation />}></Route>
+    <Route path='/material' element={<MaterialDonation />}></Route>
+   
+
    </Routes>
    </Router>  
      

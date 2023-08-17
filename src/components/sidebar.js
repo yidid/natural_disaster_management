@@ -19,10 +19,10 @@ const CommunityAdmin= (props)=>{
 
 <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
 
-<div className="min-h-screen flex flex-row bg-gray-100 absolute z-0">
-<div className="flex flex-col w-56 bg-gray-50 overflow-hidden">
+<div className=" min-h-screen flex flex-row bg-gray-100 absolute z-0">
+<div className="flex flex-col w-56 bg-gray-50 overflow-hidden sticky left-0">
 
-<ul className="flex flex-col py-4">
+<ul className=" sticky left-0 flex flex-col py-4">
   <li>
     <a href="/" className="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
       <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i className="bx bx-home"></i></span>

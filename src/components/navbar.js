@@ -1,4 +1,5 @@
 import React from "react";
+import image from '../images/logo.png'
 
 const NavBar= ()=>{
     return(
@@ -22,7 +23,7 @@ const NavBar= ()=>{
       </div>
       <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
         <div className="flex flex-shrink-0 items-center">
-          <img className="h-8 w-auto" src='./images/ndm.png' alt="Your Company"></img>
+          <img className="h-12 w-auto" src={image} alt="Your Company"></img>
         </div>
         <div className="hidden sm:ml-6 sm:block">
           <div className="flex space-x-4">
@@ -45,7 +46,7 @@ const NavBar= ()=>{
           </svg>
         </button>
 
-        =
+      
         <div className="relative ml-3">
           <div>
             <button type="button" className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">

@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "../components/navbar";
+import { Link } from "react-router-dom";
 
 const UserDonation =()=>{
 
@@ -7,10 +8,17 @@ const UserDonation =()=>{
        
             <>
             <NavBar/>
+
             <div class="block rounded-lg z-1 bg-gray-50 ml-20 mb-96 p-12 m-11 dark:bg-grey-100 justify-center content-center ">
+            <Link to="/ask">
+            <button  class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 mb-16 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+ Ask for Donation
+</button>
+      </Link>
+          
+       
             <div className="max-w-sm w-full lg:max-w-full lg:flex">
-  <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"  title="Woman holding a mug">
-  </div>
+
   <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
     <div className="mb-8">
       <p className="text-sm text-gray-600 flex items-center">
@@ -21,13 +29,11 @@ const UserDonation =()=>{
       </p>
       <div className="text-gray-900 font-bold text-3xl font-serif mb-2">Lets Donate</div>
       <p className="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+
     </div>
     <div className="flex items-center">
       
-      <div className="text-sm">
-        <p className="text-gray-900 leading-none">Jonathan Reinink</p>
-        <p className="text-gray-600">Aug 18</p>
-      </div>
+    
     </div>
   </div>
 </div>
