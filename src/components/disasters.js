@@ -99,29 +99,33 @@ const DisasterComponent=()=>{
        
         {disasters &&
             disasters.map((disaster, index) => (
-              <div className="max-w-xl mt-10 rounded overflow-hidden shadow-lg">
               
-        <img className="w-full" src={image} alt="Sunset in the mountains"></img>
-        <div className="px-6 py-4">
-          <div className={"font-extrabold text-xl mb-2 font-serif " + (index === currentIndex ? "active" :"" )
-        }onClick={() => setActiveDisaster(disaster, index)}
-        key={index}
-        >{disaster.title}</div>
-          <p className="text-gray-700 text-base font-serif">
-           {disaster.description}
-            
-          </p>
-        </div>
-       
-        <div className="flex items-center">
-      
-      <div className="text-sm pl-80 pb-10" >
-        <p className="text-gray-900 font-serif leading-none">{disaster.name}</p>
-    <p className="text-gray-600 font-mono">{disaster.createdAt}</p>
-      </div>
-    </div>
-       </div>
-        
+              <div class="max-w-xl container bg-white rounded-xl shadow-lg  transition duration-500 hover: mb-10 hover:scale-105 shadow-2x ">
+              <div>
+                <span class="text-white text-xs font-bold rounded-lg bg-green-500 inline-block mt-4 ml-4 py-1.5 px-4 cursor-pointer">#Donate</span>
+                <h1 class="text-2xl mt-2 ml-4 font-bold text-gray-800 cursor-pointer hover:text-gray-900 transition duration-100">{disaster.title}</h1>
+                <p class="ml-4 mt-1 mb-2 text-gray-700 hover:underline cursor-pointer">#{disaster.title} lets help people</p>
+              </div>
+              <img class="w-full h-60 cursor-pointer" src={image}  alt="" />
+              <p class="ml-4 mt-1 mb-2 text-gray-700 hover:underline cursor-pointer">{disaster.description}</p>
+              <div class="flex p-4 justify-between">
+                <div class="flex items-center space-x-2">
+                  <img class="w-10 rounded-full" src="https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_3.jpg" alt="sara" />
+                  <h2 class="text-gray-800 font-bold cursor-pointer">{disaster.name}</h2>
+                </div>
+                <div class="flex space-x-2">
+                
+                  <div class="flex space-x-1 items-center">
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-red-500 hover:text-red-400 transition duration-100 cursor-pointer" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                    <span>20</span>
+                  </div>
+                </div>
+              </div>
+            </div>
          
           ))}
     
