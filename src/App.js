@@ -28,7 +28,7 @@ function App() {
     <Route path='/userDonation' element={<UserDonation />}></Route>
     <Route path='/disasters' element={<AddDisaster />}></Route>
     <Route path='/ask' element={<AskDonation />}></Route>
-    <Route path='/cash' element={<CashDonation />}></Route>
+    <Route path='/donations' element={<CashDonation />}></Route>
     <Route path='/material' element={<MaterialDonation />}></Route>
    
 

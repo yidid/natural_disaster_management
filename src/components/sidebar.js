@@ -19,7 +19,7 @@ const CommunityAdmin= (props)=>{
 
 <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
 
-<div className=" min-h-screen flex flex-row bg-gray-100 absolute z-0">
+<div className=" s min-h-screen flex flex-row bg-gray-100 absolute z-0">
 <div className="flex flex-col w-56 bg-gray-50 overflow-hidden sticky left-0">
 
 <ul className=" sticky left-0 flex flex-col py-4">
