@@ -13,6 +13,7 @@ import AddDisaster from './components/addDisaster';
 import AskDonation from './pages/user.ask.donation';
 import CashDonation from './pages/user.cash';
 import MaterialDonation from './components/Material';
+import ResponderList from './pages/user.responders';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
     <Route path='/ask' element={<AskDonation />}></Route>
     <Route path='/donations' element={<CashDonation />}></Route>
     <Route path='/material' element={<MaterialDonation />}></Route>
+    <Route path='/userResponders' element={< ResponderList />}></Route>
    
 
    </Routes>
