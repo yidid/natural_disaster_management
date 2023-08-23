@@ -14,6 +14,10 @@ import AskDonation from './pages/user.ask.donation';
 import CashDonation from './pages/user.cash';
 import MaterialDonation from './components/Material';
 import ResponderList from './pages/user.responders';
+import Prepare from './pages/prepare';
+import Login from './pages/login';
+import Signup from './pages/signup';
+import AdminLogin from './pages/adminLogin';
 
 function App() {
   return (
@@ -32,6 +36,10 @@ function App() {
     <Route path='/donations' element={<CashDonation />}></Route>
     <Route path='/material' element={<MaterialDonation />}></Route>
     <Route path='/userResponders' element={< ResponderList />}></Route>
+    <Route path='/prepare' element={<  Prepare />}></Route>
+    <Route path='/login' element={< Login />}></Route>
+    <Route path='/signup' element={< Signup />}></Route>
+    <Route path='/adminLogin' element={< AdminLogin />}></Route>
    
 
    </Routes>
