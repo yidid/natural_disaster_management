@@ -49,6 +49,7 @@ const DisasterComponent=()=>{
   };
 
   const retrieveDisasters = () => {
+  
     const params = getRequestParams(searchTitle, page, pageSize);
 
     DisasterService.getAll(params)

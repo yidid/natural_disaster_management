@@ -7,6 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
+
 const AddDisaster = () => {
     const initialDisasterState = {
         id: null,
@@ -43,8 +44,10 @@ const AddDisaster = () => {
               published: response.data.published
              
             });
-            showToastMessage();
-           
+
+            
+            
+          
             console.log(response.data);
           })
           .catch(e => {
@@ -60,7 +63,15 @@ const AddDisaster = () => {
             position: toast.POSITION.TOP_RIGHT
         });
     };
-    
+    const showToast = () => {
+      toast.success("Success!", {
+        position: toast.POSITION.TOP_CENTER,
+        autoClose: 5000, // milliseconds
+        });
+      ;
+  };
+
+ 
       
     return(
         <>
@@ -119,10 +130,18 @@ const AddDisaster = () => {
      
   <div className="mt-6 flex items-center justify-end gap-x-6">
     <button type="button"
-  
-    
+    onClick={showToastMessage}
      className="text-sm  font-semibold leading-6 text-gray-900">Cancel</button>
-    <button type="submit" onClick={saveDisaster}  className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Save</button>
+        <ToastContainer />
+
+    <button type="submit"
+     onClick={ () => { 
+       showToast()
+       saveDisaster()
+      }
+      }
+     
+     className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Save</button>
     <ToastContainer />
   </div>
   </div>
