@@ -31,6 +31,9 @@ const ResponderList = () => {
                               <th class="p-2 whitespace-nowrap">
                                   <div class="font-semibold text-center">Phone</div>
                               </th>
+                              <th class="p-2 whitespace-nowrap">
+                                  <div class="font-semibold text-center">Address</div>
+                              </th>
                           </tr>
                       </thead>
                       <tbody class="text-sm divide-y divide-gray-100">
@@ -45,10 +48,13 @@ const ResponderList = () => {
                                   <div class="text-left">alexshatov@gmail.com</div>
                               </td>
                               <td class="p-2 whitespace-nowrap">
-                                  <div class="text-left font-medium text-green-500">$2,890.66</div>
+                                  <div class="text-left font-medium text-green-500">Fire Fighter</div>
                               </td>
                               <td class="p-2 whitespace-nowrap">
-                                  <div class="text-lg text-center">🇺🇸</div>
+                                  <div class="text-center">0909087587</div>
+                              </td>
+                              <td class="p-2 whitespace-nowrap">
+                                  <div class=" text-center">CMC</div>
                               </td>
                           </tr>
                           <tr>
@@ -62,10 +68,13 @@ const ResponderList = () => {
                                   <div class="text-left">philip.h@gmail.com</div>
                               </td>
                               <td class="p-2 whitespace-nowrap">
-                                  <div class="text-left font-medium text-green-500">$2,767.04</div>
+                                  <div class="text-left font-medium text-green-500">Fire fighter</div>
                               </td>
                               <td class="p-2 whitespace-nowrap">
-                                  <div class="text-lg text-center">🇩🇪</div>
+                                  <div class="text-center">0909087587</div>
+                              </td>
+                              <td class="p-2 whitespace-nowrap">
+                                  <div class=" text-center">CMC</div>
                               </td>
                           </tr>
                           <tr>
@@ -79,10 +88,13 @@ const ResponderList = () => {
                                   <div class="text-left">mirkofisuk@gmail.com</div>
                               </td>
                               <td class="p-2 whitespace-nowrap">
-                                  <div class="text-left font-medium text-green-500">$2,996.00</div>
+                                  <div class="text-left font-medium text-green-500">Insurance</div>
                               </td>
                               <td class="p-2 whitespace-nowrap">
-                                  <div class="text-lg text-center">🇫🇷</div>
+                                  <div class="text-center">0909087587</div>
+                              </td>
+                              <td class="p-2 whitespace-nowrap">
+                                  <div class=" text-center">CMC</div>
                               </td>
                           </tr>
                           <tr>
@@ -96,10 +108,13 @@ const ResponderList = () => {
                                   <div class="text-left">olga.s@cool.design</div>
                               </td>
                               <td class="p-2 whitespace-nowrap">
-                                  <div class="text-left font-medium text-green-500">$1,220.66</div>
+                                  <div class="text-left font-medium text-green-500">Responder</div>
                               </td>
                               <td class="p-2 whitespace-nowrap">
-                                  <div class="text-lg text-center">🇮🇹</div>
+                                  <div class="text-center">0909087587</div>
+                              </td>
+                              <td class="p-2 whitespace-nowrap">
+                                  <div class=" text-center">CMC</div>
                               </td>
                           </tr>
                           <tr>
@@ -113,10 +128,13 @@ const ResponderList = () => {
                                   <div class="text-left">longburak@gmail.com</div>
                               </td>
                               <td class="p-2 whitespace-nowrap">
-                                  <div class="text-left font-medium text-green-500">$1,890.66</div>
+                                  <div class="text-left font-medium text-green-500">Nurse</div>
                               </td>
                               <td class="p-2 whitespace-nowrap">
-                                  <div class="text-lg text-center">🇬🇧</div>
+                                  <div class="text-center">0909087587</div>
+                              </td>
+                              <td class="p-2 whitespace-nowrap">
+                                  <div class=" text-center">Bole</div>
                               </td>
                           </tr>
                       </tbody>
