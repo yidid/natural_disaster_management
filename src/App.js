@@ -18,6 +18,7 @@ import Prepare from './pages/prepare';
 import Login from './pages/login';
 import Signup from './pages/signup';
 import AdminLogin from './pages/adminLogin';
+import UserMaterialDonation from './pages/user.materials.donation';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
     <Route path='/login' element={< Login />}></Route>
     <Route path='/signup' element={< Signup />}></Route>
     <Route path='/adminLogin' element={< AdminLogin />}></Route>
+    <Route path='/materialDonations' element={< UserMaterialDonation />}></Route>
    
 
    </Routes>

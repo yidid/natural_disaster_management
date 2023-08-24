@@ -68,7 +68,14 @@ const UserDonation = () => {
 
     <>
       <NavBar />
+      <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
+
       <div className="block rounded-lg z-1 bg-gray-50 ml-20 mb-96 p-12 m-11 dark:bg-grey-100 justify-center content-center ">
+      <Link to="/ask">
+          <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 mb-10 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+            Ask for Donation
+          </button>
+        </Link>
         <div className="mb-3">
           <div className="relative mb-4 flex w-full flex-wrap items-stretch">
             <input
@@ -101,11 +108,20 @@ const UserDonation = () => {
             </button>
           </div>
         </div>
-        <Link to="/ask">
-          <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 mb-16 border-b-4 border-blue-700 hover:border-blue-500 rounded">
-            Ask for Donation
-          </button>
-        </Link>
+         <div className="mb-7 row ">
+         <a href="/materialDonations" className="flex flex-row font-medium text-blue-600 dark:text-blue-500 hover:underline">
+          Donate Materials instead
+       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+  <path fill-rule="evenodd" d="M3.75 12a.75.75 0 01.75-.75h13.19l-5.47-5.47a.75.75 0 011.06-1.06l6.75 6.75a.75.75 0 010 1.06l-6.75 6.75a.75.75 0 11-1.06-1.06l5.47-5.47H4.5a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+</svg>
+
+
+
+    </a>
+
+         
+        </div>
+      
         <div class="grid grid-cols-3 gap-2">
         {donations &&
             donations.map((donation, index) => (
