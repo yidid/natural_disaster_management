@@ -20,6 +20,10 @@ import Signup from './pages/signup';
 import AdminLogin from './pages/adminLogin';
 import UserMaterialDonation from './pages/user.materials.donation';
 
+import DisasterDetails from './pages/disasterDetail.admin';
+import DisasterDetail from './components/disasterDetail';
+import UserDisasterDetail from './pages/user.detailDisaster';
+
 function App() {
   return (
     <Router>
@@ -42,6 +46,10 @@ function App() {
     <Route path='/signup' element={< Signup />}></Route>
     <Route path='/adminLogin' element={< AdminLogin />}></Route>
     <Route path='/materialDonations' element={< UserMaterialDonation />}></Route>
+    <Route path='/disasters/:id' element={< DisasterDetails />}></Route>
+    <Route path='user/disasters/:id' element={< UserDisasterDetail />}></Route>
+  
+    
    
 
    </Routes>
