@@ -1,10 +1,12 @@
 import React from "react";
 import image from '../images/nd.jpg'
 import  { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import DisasterService from "../services/DisasterService";
 import Pagination from '@mui/material/Pagination';
 import { Select, initTE } from "tw-elements";
 initTE({ Select });
+
 
 
 const DisasterComponent=()=>{
@@ -184,7 +186,11 @@ const DisasterComponent=()=>{
                 <p class="ml-4 mt-1 mb-2 text-gray-700 hover:underline cursor-pointer">#{disaster.title} lets help people</p>
               </div>
               <img class="w-full h-60 cursor-pointer" src={image}  alt="" />
-              <p class="ml-4 mt-1 mb-2 text-gray-700 hover:underline cursor-pointer">{disaster.description}</p>
+              <p class="ml-4 mt-1 mb-2 text-gray-700 cursor-pointer">{disaster.description.substring(0,150)}....  
+              <Link className='text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0' to={ `/disasters/${disaster.id}`}>
+                                            Learn more
+                                        </Link></p>
+            
               <div class="flex p-4 justify-between">
                 <div class="flex items-center space-x-2">
                   <img class="w-10 rounded-full" src="https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_3.jpg" alt="sara" />
