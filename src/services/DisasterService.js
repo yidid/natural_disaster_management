@@ -5,7 +5,11 @@ const getAll = (params) => {
 };
 
 const get = id => {
-  return http.get(`/disasters/${id}`);
+  return http.get(`/disasters/${id}`,);
+};
+
+const getdisasterd = id => {
+  return http.get(`user/disasters/${id}`,);
 };
 
 const create = data => {
@@ -35,7 +39,8 @@ const DisasterService = {
   update,
   remove,
   removeAll,
-  findByTitle
+  findByTitle,
+  getdisasterd
 };
 
 export default DisasterService;
