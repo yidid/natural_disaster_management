@@ -154,6 +154,7 @@ const   Newpage = ()=>{
         {pageSizes.reverse().map((size) => (
        <option key={size} value={size}>
        {size}
+     
      </option>
      ))}
     </select>

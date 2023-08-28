@@ -142,7 +142,7 @@ const DisasterComponent=()=>{
     <label for="frm-whatever" class="sr-only">My field</label>
     <select class="appearance-none w-full py-1 px-2 bg-white border-blue-300" name="whatever" id="frm-whatever"  onChange={handlePageSizeChange} value={pageSize}>
         <option value="">Items per page&hellip;</option>
-        {pageSizes.reverse().map((size) => (
+        {pageSizes.slice(0).reverse().map((size) => (
        <option key={size} value={size}>
        {size}
      </option>
@@ -167,7 +167,7 @@ const DisasterComponent=()=>{
             siblingCount={1}
             boundaryCount={1}
             variant="outlined"
-            shape="rounded"
+            shape="circular"
             onChange={handlePageChange}
           />
         </div>

@@ -23,6 +23,9 @@ import UserMaterialDonation from './pages/user.materials.donation';
 import DisasterDetails from './pages/disasterDetail.admin';
 import DisasterDetail from './components/disasterDetail';
 import UserDisasterDetail from './pages/user.detailDisaster';
+import AdminDashboardNew from './pages/admin.dashboard';
+import MaterialDonationsAdmin from './pages/material.donation.admin';
+
 
 function App() {
   return (
@@ -48,6 +51,8 @@ function App() {
     <Route path='/materialDonations' element={< UserMaterialDonation />}></Route>
     <Route path='/disasters/:id' element={< DisasterDetails />}></Route>
     <Route path='user/disasters/:id' element={< UserDisasterDetail />}></Route>
+    <Route path='/admin' element={< AdminDashboardNew />}></Route>
+    <Route path='/materialDonationsAdmin' element={<MaterialDonationsAdmin/>}></Route>
   
     
    
