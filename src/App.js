@@ -19,12 +19,12 @@ import Login from './pages/login';
 import Signup from './pages/signup';
 import AdminLogin from './pages/adminLogin';
 import UserMaterialDonation from './pages/user.materials.donation';
-
 import DisasterDetails from './pages/disasterDetail.admin';
-import DisasterDetail from './components/disasterDetail';
 import UserDisasterDetail from './pages/user.detailDisaster';
 import AdminDashboardNew from './pages/admin.dashboard';
-import MaterialDonationsAdmin from './pages/material.donation.admin';
+import AdminRespondersCRUD from './pages/admin.responders.crud';
+import AdminUsersCRUD from './pages/admin.user.crud';
+import AdminContentCRUD from './pages/admin.content.crud';
 
 
 function App() {
@@ -52,7 +52,10 @@ function App() {
     <Route path='/disasters/:id' element={< DisasterDetails />}></Route>
     <Route path='user/disasters/:id' element={< UserDisasterDetail />}></Route>
     <Route path='/admin' element={< AdminDashboardNew />}></Route>
-    <Route path='/materialDonationsAdmin' element={<MaterialDonationsAdmin/>}></Route>
+    <Route path='/manageResponders' element={<AdminRespondersCRUD/>}></Route>
+    <Route path='/manageUsers' element={<AdminUsersCRUD/>}></Route>
+    <Route path='/manageContentManagers' element={<AdminContentCRUD/>}></Route>
+    
   
     
    
