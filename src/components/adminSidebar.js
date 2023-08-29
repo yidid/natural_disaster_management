@@ -2,7 +2,6 @@ import React from "react";
 
 const AdminSidebar= (props)=>(
   <>
-
 <nav className="sticky top-0 z-50 flex w-full flex-wrap content-center text-center bg-[#FBFBFB] py-2 text-purple-500 shadow-lg focus:text-neutral-700 dark:bg-slate-50 lg:py-4">
       <div className="flex w-full flex-wrap content-center justify-center px-3 overflow-hidden">
 
@@ -23,7 +22,7 @@ const AdminSidebar= (props)=>(
 
         <ul className=" sticky left-0 flex flex-col py-4">
           <li>
-            <a href="/" className="flex flex-row items-center h-16 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
+            <a href="/admin" className="flex flex-row items-center h-16 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
               <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i className="bx bx-home"></i></span>
               <span className="hidden md:block text-sm font-medium">Dashboard</span>
             </a>
