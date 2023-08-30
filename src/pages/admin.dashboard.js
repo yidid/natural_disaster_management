@@ -13,19 +13,19 @@ return(
 <div class="grid grid-cols-2 mt-10 ">
 
   <div class="bg-red-300">
-    <h5>1</h5>
+    <h5>Disaster</h5>
   </div>
 
   <div class="bg-blue-300">
-    <h5>2</h5>
+    <h5>Customer</h5>
   </div>
 
   <div class="bg-green-300">
-    <h5>3</h5>
+    <h5>Responders</h5>
   </div>
 
   <div class="bg-orange-300">
-    <h5>4</h5>
+    <h5>Donation</h5>
   </div>
 
   
