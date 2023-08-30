@@ -57,13 +57,11 @@ const DisastersUser = () => {
   
     const params = getRequestParams(searchTitle, page, pageSize);
 
-    DisasterService.getAll(params)
+    DisasterService.findPublished(params)
       .then((response) => {
         const { disasters, totalPages } = response.data;
-
         setDisasters(disasters);
         setCount(totalPages);
-
         console.log(response.data);
       })
       .catch((e) => {

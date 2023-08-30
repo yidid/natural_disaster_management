@@ -32,6 +32,10 @@ const findByTitle = title => {
   return http.get(`/disasters?title=${title}`);
 };
 
+const findPublished = (params,published)  => {
+  return http.get(`/disasters?published=${published} `,{params});
+};
+
 const DisasterService = {
   getAll,
   get,
@@ -40,7 +44,8 @@ const DisasterService = {
   remove,
   removeAll,
   findByTitle,
-  getdisasterd
+  getdisasterd,
+  findPublished
 };
 
 export default DisasterService;

@@ -19,12 +19,18 @@ import Login from './pages/login';
 import Signup from './pages/signup';
 import AdminLogin from './pages/adminLogin';
 import UserMaterialDonation from './pages/user.materials.donation';
-import DisasterDetails from './pages/disasterDetail.admin';
 import UserDisasterDetail from './pages/user.detailDisaster';
 import AdminDashboardNew from './pages/admin.dashboard';
 import AdminRespondersCRUD from './pages/admin.responders.crud';
 import AdminUsersCRUD from './pages/admin.user.crud';
 import AdminContentCRUD from './pages/admin.content.crud';
+import ContentManagerDetails from './pages/content.detail';
+import UserDetails from './pages/user.detail';
+import ResponderDetails from './pages/responders.detail';
+import AddUsers from './pages/add.user';
+import AddResponders from './pages/add.responders';
+import AddContentManagers from './pages/add.content.manager';
+import Disaster from './components/admin.disaster.detail';
 
 
 function App() {
@@ -49,17 +55,18 @@ function App() {
     <Route path='/signup' element={< Signup />}></Route>
     <Route path='/adminLogin' element={< AdminLogin />}></Route>
     <Route path='/materialDonations' element={< UserMaterialDonation />}></Route>
-    <Route path='/disasters/:id' element={< DisasterDetails />}></Route>
+    <Route path='/disasters/:id' element={<Disaster/>}></Route>
+    <Route path='/contentmanagers/:id' element={< ContentManagerDetails />}></Route>
+    <Route path='/responders/:id' element={< ResponderDetails />}></Route>
     <Route path='user/disasters/:id' element={< UserDisasterDetail />}></Route>
+    <Route path='users/:id' element={< UserDetails />}></Route>
     <Route path='/admin' element={< AdminDashboardNew />}></Route>
     <Route path='/manageResponders' element={<AdminRespondersCRUD/>}></Route>
     <Route path='/manageUsers' element={<AdminUsersCRUD/>}></Route>
     <Route path='/manageContentManagers' element={<AdminContentCRUD/>}></Route>
-    
-  
-    
-   
-
+    <Route path='/usersForm' element={<AddUsers/>}></Route>
+    <Route path='/respondersForm' element={<AddResponders/>}></Route>
+    <Route path='/contentManagersForm' element={<AddContentManagers/>}></Route>
    </Routes>
    </Router>  
      

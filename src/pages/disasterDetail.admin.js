@@ -8,21 +8,11 @@ const DisasterDetails = ()=>{
         <>
               <CommunityAdmin name="Disaster Details"/>
               <div class="block rounded-lg z-1 bg-gray-50 ml-64 mb-96 p-28 m-1 dark:bg-grey-100">
-           
-                <DisasterDetail />
-           
+                <DisasterDetail/>
            </div>
-            
- 
-
-
-
+        
                </>
-             
-             
-         
-        
-        
+                
     )
 }
 
