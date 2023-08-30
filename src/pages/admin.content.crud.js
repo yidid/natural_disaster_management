@@ -2,6 +2,7 @@ import React from "react";
 import AdminSidebar from "../components/adminSidebar";
 import ContentManagerServices from "../services/contentManagerServices";
 import { useState,useEffect} from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -61,14 +62,21 @@ const AdminContentCRUD = ()=>{
 	rel="stylesheet"></link>
             
              <AdminSidebar name="content managers"/>
-           
+            
             
 
-             <div class="h-full">
+             <div class="h-full mt-5">
       
       <div class="w-screen max-w-4xl mx-auto my-4 bg-white shadow-lg rounded-sm border border-gray-200 ">
           <header class="px-5 py-4 border-b border-gray-100">
+          <Link to="/contentManagersForm"> 
+        <button class="bg-blue-500 hover:bg-blue-400 text-white font-light py-2 px-4 mb-5 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+        Add Content Manager
+        </button>
+        </Link>
           <h2 class="font-semibold text-gray-800 mb-5">Content Managers</h2>
+         
+           
           <div className="mb-3">
           <div className="relative mb-4 flex w-full flex-wrap items-stretch">
             <input
@@ -152,9 +160,12 @@ const AdminContentCRUD = ()=>{
                 <a href="#" class="text-gray-500 hover:text-gray-900 mr-2">
                   <i class="material-icons-outlined  text-base">people</i>
               </a>
-              <a href="#" class="text-green-500 hover:text-green-900 mr-2">
+              <Link className='text-green-500 inline-flex items-center md:mb-2 lg:mb-0' to={ `/contentmanagers/${contentmanager.id}`}>
               <i class="material-icons-outlined text-base">edit</i>
-              </a>
+                                        </Link>
+            
+            
+             
               <a href="#" class="text-red-500 hover:text-red-900 mr-2">
               <i class="material-icons-round text-base">delete_outline</i>
               </a>
