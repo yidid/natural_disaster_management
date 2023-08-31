@@ -2,7 +2,7 @@ import React from "react";
 
 const AdminSidebar= (props)=>(
   <>
-<nav className="sticky top-0 z-50 flex w-full flex-wrap content-center text-center bg-[#FBFBFB] py-2 text-purple-500 shadow-lg focus:text-neutral-700 dark:bg-slate-50 lg:py-4">
+<nav className="sticky top-0 z-50 flex w-full flex-wrap content-center text-center bg-[#FBFBFB] py-2 text-gray-00 shadow-lg focus:text-neutral-700 dark:bg-slate-50 lg:py-4">
       <div className="flex w-full flex-wrap content-center justify-center px-3 overflow-hidden">
 
         <img src='./images/ndm.png' className="w-14 rounded-sm absolute left-0 top-0" alt="Avatar" />
@@ -14,7 +14,6 @@ const AdminSidebar= (props)=>(
 
       </div>
    
-
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
 
     <div className="min-h-screen flex flex-row bg-gray-100 absolute z-26 mt-9">

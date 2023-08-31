@@ -2,6 +2,7 @@ import React from "react";
 import CommunityAdmin from "../components/sidebar";
 import { useState,useEffect } from "react";
 import DonationService from "../services/DonationService";
+import { Link } from "react-router-dom";
 
 
 const Donation = ()=>{
@@ -13,6 +14,10 @@ const Donation = ()=>{
   useEffect(() => {
     retrieveDonation();
   }, []);
+
+
+
+
 
   const onChangeSearchTitle = e => {
     const searchTitle = e.target.value;
@@ -72,7 +77,7 @@ const Donation = ()=>{
 
 
          <button
-           className="relative z-[2] flex items-center rounded-r bg-blue-500 px-6 py-2.5 text-xs font-medium uppercase leading-tight text-blue-950 shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
+           className="relative z-[2] flex items-center rounded-r bg-blue-400 px-6 py-2.5 text-xs font-medium uppercase leading-tight text-blue-950 shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
            type="button"
            id="button-addon1"
            onClick={findByTitle}
@@ -145,9 +150,12 @@ const Donation = ()=>{
              <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
          </svg>
          <span className="text-base font-normal leading-tight text-slate-800">{donation.description}</span>
+         
      </li>
+     
    
  </ul>
+
  <button type="button" className="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose plan</button>
 </div>
 

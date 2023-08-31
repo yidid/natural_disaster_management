@@ -89,7 +89,7 @@ const UserDonation = () => {
 
 
             <button
-              className="relative z-[2] flex items-center rounded-r bg-blue-500 px-6 py-2.5 text-xs font-medium uppercase leading-tight text-blue-950 shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
+              className="relative z-[2] flex items-center rounded-r bg-blue-400 px-6 py-2.5 text-xs font-medium uppercase leading-tight text-blue-950 shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
               type="button"
               id="button-addon1"
               onClick={findByTitle}
@@ -136,18 +136,14 @@ const UserDonation = () => {
     </div>
     <ul role="list" className="space-y-5 my-7">
         <li className="flex space-x-3 items-center">
-        <svg className="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-            </svg>
-             <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"> Account Number</span>
-           
-            <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"> {donation.bank} {donation.account}</span>
+        
+             <span className="text-base  font-extrabold leading-tight text-gray-500 dark:text-gray-400"> Account Number</span>
+             <p className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"> {donation.bank} {donation.account}</p>
         </li>
+     
         <li className="flex space-x-3">
-           <svg className="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-            </svg>
-        <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"> Full Name</span>
+      
+        <span className="text-base font-extrabold leading-tight text-gray-500 dark:text-gray-400">Full Name </span>
            
            <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"> {donation.name}</span>
         </li>
@@ -155,19 +151,22 @@ const UserDonation = () => {
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="grey" class="w-6 h-6">
   <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clip-rule="evenodd" />
 </svg>
-
+<span className="text-base font-extrabold leading-tight text-gray-500 dark:text-gray-400">Phone number </span>
+           
 
             <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">{donation.phone}</span>
         </li>
-        <li className="flex space-x-3 ">
-            <svg className="flex-shrink-0 w-4 h-4 text-gray-400 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-            </svg>
+        <li className=" space-x-3 ">
+        <span className="text-base font-extrabold leading-tight text-gray-500 dark:text-gray-400">Case of donation </span>
             <span className="text-base font-normal leading-tight text-gray-500">{donation.description}</span>
+          
         </li>
+        <Link className='text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0' to={ `donations/${donation.id}`}>
+                                            Learn more
+                                        </Link>
       
     </ul>
-    <button type="button" className="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose plan</button>
+  
 </div>
 
             ))}

@@ -31,6 +31,7 @@ import AddUsers from './pages/add.user';
 import AddResponders from './pages/add.responders';
 import AddContentManagers from './pages/add.content.manager';
 import Disaster from './components/admin.disaster.detail';
+import UserDonationDetail from './pages/donation.detail';
 
 
 function App() {
@@ -59,6 +60,7 @@ function App() {
     <Route path='/contentmanagers/:id' element={< ContentManagerDetails />}></Route>
     <Route path='/responders/:id' element={< ResponderDetails />}></Route>
     <Route path='user/disasters/:id' element={< UserDisasterDetail />}></Route>
+    <Route path='userDonation/donations/:id' element={< UserDonationDetail/>}></Route>
     <Route path='users/:id' element={< UserDetails />}></Route>
     <Route path='/admin' element={< AdminDashboardNew />}></Route>
     <Route path='/manageResponders' element={<AdminRespondersCRUD/>}></Route>

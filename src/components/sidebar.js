@@ -3,12 +3,12 @@ import React from "react";
 const CommunityAdmin= (props)=>(
   <>
 
-    <nav className="sticky top-0 z-50 flex w-full flex-wrap content-center text-center bg-[#FBFBFB] py-2 text-purple-500 shadow-lg focus:text-neutral-700 dark:bg-slate-50 lg:py-4">
+    <nav className="sticky top-0 z-50 flex w-full flex-wrap content-center text-center bg-[#FBFBFB] py-2 text-blue-950 shadow-lg focus:text-neutral-700 dark:bg-slate-50 lg:py-4">
       <div className="flex w-full flex-wrap content-center justify-center px-3">
 
         <img src='./images/ndm.png' className="w-14 rounded-sm absolute left-0 top-0" alt="Avatar" />
 
-        <h1 className=" text-4xl font-bold font-serif text-center">{props.name}</h1>
+        <h1 className=" text-4xl font-bold text-slate-900 font-serif text-center">{props.name}</h1>
 
 
         <img src="https://tecdn.b-cdn.net/img/new/avatars/2.webp" className="w-12 rounded-full absolute top-3 right-3" alt="Avatar" />

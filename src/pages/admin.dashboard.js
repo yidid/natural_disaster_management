@@ -4,35 +4,47 @@ import AdminSidebar from "../components/adminSidebar";
 
 
 const AdminDashboardNew =()=>{
-  
-return(
-          <>
-          <AdminSidebar name="Dashborad" />
-          <div class="block rounded-lg  h-screen z-1 bg-gray-50 ml-50  p-7 m-11 dark:bg-grey-100">
+  const [isMinimized, setIsMinimized] = React.useState(false);
 
-<div class="grid grid-cols-2 mt-10 ">
+  const handleResize = () => {
+    if (window.innerWidth < 768) {
+      setIsMinimized(true);
+    } else {
+      setIsMinimized(false);
+    }
+  };
 
-  <div class="bg-red-300">
-    <h5>1</h5>
-  </div>
+  React.useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
-  <div class="bg-blue-300">
-    <h5>2</h5>
-  </div>
-
-  <div class="bg-green-300">
-    <h5>3</h5>
-  </div>
-
-  <div class="bg-orange-300">
-    <h5>4</h5>
-  </div>
-
-  
-</div>
-</div>
-
-          </>
+  return (
+    <>
+      <AdminSidebar name="Dashboard" />
+     
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-10 lg:ml-60 sm:ml-96">
+          <div className={`bg-gray-700  text-center text-4xl font-extrabold text-white w-80 h-60  pt-7 ${isMinimized ? "icon-only" : ""}`}>
+            <h5>{isMinimized ? "1" : "Disaster"}</h5>
+            <h5>{isMinimized ? "1" : "100"}</h5>
+          </div>
+          <div className={`bg-gray-600 text-center text-4xl font-extrabold  text-white pt-7  w-80 h-60  ${isMinimized ? "icon-only" : ""}`}>
+            <h5>{isMinimized ? "2" : "Responder"}</h5>
+            <h5>{isMinimized ? "2" : "12345"}</h5>
+          </div>
+          <div className={`bg-gray-700   text-center text-4xl font-extrabold text-white w-80 h-60 pt-7 ${isMinimized ? "icon-only" : ""}`}>
+            <h5>{isMinimized ? "3" : "Customer"}</h5>
+            <h5>{isMinimized ? "3" : "78453"}</h5>
+          </div>
+          <div className={`bg-gray-600   text-center text-4xl font-extrabold text-white w-80 h-60 pt-7  ${isMinimized ? "icon-only" : ""}`}>
+            <h5>{isMinimized ? "4" : "Donation"}</h5>
+            <h5>{isMinimized ? "4" : "100348659"}</h5>
+          </div>
+        </div>
+    
+    </>
         )
         
     
